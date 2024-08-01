@@ -1,10 +1,13 @@
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>My Blog</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer src="assets/js/form.js"></script>
+  <script defer src="assets/js/logic.js"></script>
+
 </head>
 <body>
   <header>
@@ -12,9 +15,24 @@
   </header>
   
   <main>
-    <section id="posts"></section>
+
+    <form id="blogForm">
+      <label for="name">Name:</label>
+      <input type="text" id="userName" name="userName" value required>
+
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" value required>
+
+      <label for="content">Content:</label>
+      <textarea rows="6" cols="4" id="content" name="content" value required></textarea>
+
+      <input type="submit" id="submitPost" value="submitPost">Save</input>
+      <span id="errorMsg" hidden="true">Post Error</span>
+
+  </form>
+  
   </main>
 
-  <script src="script.js"></script>
 </body>
-</html> -->
+</html>
+
