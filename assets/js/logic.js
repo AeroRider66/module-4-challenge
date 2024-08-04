@@ -1,11 +1,10 @@
 function readStorage() {
     console.log("reading local storage...");
     const blogStorage = localStorage.getItem("blogPosts") || []
-   
+
     if (blogStorage.length <= 0) {
         console.log("No blogs in storage");
-        return;
-        
+        return blogStorage;
     }
 
     return JSON.parse(blogStorage)
@@ -17,14 +16,14 @@ function writeStorage(newPost = {}) {
     console.log(blogStorage, "result");
 
 
-        if (!blogStorage.title && !blogStorage.name && !blogStorage.content) {
+    if (!newPost.title && !newPost.name && !newPost.content) {
         console.log("Missing keys in blogpost");
         return;
-        
+
     }
 
     blogStorage.push(newPost);
-    localStorage.setItem(JSON.stringify(blogStorage))
+    localStorage.setItem("blogPosts", JSON.stringify(blogStorage))
     return true;
 
 }
@@ -39,10 +38,13 @@ function handleSubmit(event) {
         const currentInput = event.target[i];
         newPost[currentInput.name] = currentInput.value
         console.log(currentInput.value);
+        if (currentInput.value !== "Submit") {
+            currentInput.value = ""
+        }
     }
     console.log(newPost);
-    // writeStorage(event.target.value)
-    
+    writeStorage(newPost)
+
 }
 
 blogForm.addEventListener("submit", handleSubmit)
