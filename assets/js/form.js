@@ -7,7 +7,7 @@ const userName = document.querySelector('#userName');
 // inputName.name = 'userName';
 // inputName.placeholder = 'Name';
 
-const inputEmail = document.querySelector('#title');
+const inputTitle = document.querySelector('#title');
 // inputEmail.type = 'email';
 // inputEmail.name = 'userEmail';
 // inputEmail.placeholder = 'Email';
