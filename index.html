@@ -17,17 +17,23 @@
   <main>
 
     <form id="blogForm">
-      <label for="name">Name:</label>
-      <input type="text" id="userName" name="userName" value required>
+      <section>
+        <section id="section-nameTitle">
+          <label for="name">Name:</label>
+          <input type="text" id="userName" name="userName" value required>
+        
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" value required>
+        </section>
 
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="title" value required>
-
-      <label for="content">Content:</label>
-      <textarea rows="6" cols="4" id="content" name="content" value required></textarea>
-      <!-- <label for=""></label> -->
-      <input type="submit" id="submitPost" value="Submit"></input>
-      <span id="errorMsg" hidden="true">Post Error</span>
+        <section id="section-content">
+          <label for="content">Content:</label>
+            <textarea rows="10" cols="60" id="content" name="content" value required></textarea>
+          <!-- <label for=""></label> -->
+          <input type="submit" id="submitPost" value="Submit"></input>
+          <span id="errorMsg" hidden="true">Post Error</span>
+        </section>
+      </section>
 
   </form>
   

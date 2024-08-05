@@ -1,23 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: #234428;
   }
   
   header {
-    background-color: #333;
+    background-color: #506c62;
     padding: 20px;
-    color: white;
+    color: #44d26c;
   }
   
   h1 {
     margin: 0;
+    font-size: 35px;
+  }
+
+  form {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #44d26c;
+  }
+  section {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    /* align-items: flex-end;
+    margin: 20px auto; */
+    background-color: #37969f;
   }
   
-  section {
-    background-color: white;
+  #section-nameTitle {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: flex-end; */
+    background-color: #a27373;
+    /* height: 20px;
+    width: 40%; */
     padding: 20px;
     margin-bottom: 20px;
   }
+
+  #section-content {
+    /* display: flex;
+    justify-content: space-around; */
+    align-items: flex-end;
+    background-color: #90bd83;
+    height: 40px;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  #section-label-textarea {
+    
+  }  
   
   .post-title {
     font-size: 20px;
