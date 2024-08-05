@@ -1,5 +1,5 @@
 function readStorage() {
-    console.log("reading local storage...");
+    console.log("reading local storage..111.");
     const blogStorage = localStorage.getItem("blogPosts") || []
 
     if (blogStorage.length <= 0) {
@@ -11,7 +11,7 @@ function readStorage() {
 }
 
 function writeStorage(newPost = {}) {
-    console.log("reading local storage...");
+    console.log("reading local storage..2.");
     const blogStorage = readStorage()
     console.log(blogStorage, "result");
 
@@ -25,9 +25,7 @@ function writeStorage(newPost = {}) {
     blogStorage.push(newPost);
     localStorage.setItem("blogPosts", JSON.stringify(blogStorage))
     return true;
-
 }
-
 
 function handleSubmit(event) {
     event.preventDefault()
@@ -42,7 +40,7 @@ function handleSubmit(event) {
             currentInput.value = ""
         }
     }
-    console.log(newPost);
+    console.log(newPost,"newPost");
     writeStorage(newPost)
 
 }
