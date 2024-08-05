@@ -1,19 +1,19 @@
 // Sample blog posts data
 const blogPosts = [
     {
-      title: "My First Blog Post",
+      name: "Frodo",
+      title: "One Ring to Rule Them All",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "2021-01-01"
     },
     {
-      title: "Another Blog Post",
-      content: "Praesent auctor, mauris non blandit fringilla, augue purus cursus nulla, a tincidunt eros est nec turpis.",
-      date: "2021-02-15"
+      author: "Lazarus Long",
+      title: "Time Enough for Love",
+      content: "Praesent auctor, mauris non blandit fringilla, augue purus cursus nulla, a tincidunt eros est nec turpis."
     },
     {
-      title: "The Latest Blog Post",
-      content: "Fusce eget nibh id metus tincidunt semper eu sit amet est.",
-      date: "2021-03-10"
+      name: "Paul Atredies",
+      title: "The Spice is control",
+      content: "Fusce eget nibh id metus tincidunt semper eu sit amet est."
     }
   ];
   
@@ -29,16 +29,17 @@ const blogPosts = [
       const postElement = document.createElement('article');
       const titleElement = document.createElement('h2');
       const contentElement = document.createElement('p');
-      const dateElement = document.createElement('p');
+      // const dateElement = document.createElement('p');
       
+      authorElement.classList.add('post-userNname');
       titleElement.classList.add('post-title');
       contentElement.classList.add('post-content');
-      dateElement.classList.add('post-date');
       
-      titleElement.textContent = post.title;
+      userName.textContent = post-userName;
+      titleElement.textContent = post-title;
       contentElement.textContent = post.content;
-      dateElement.textContent = `Published on ${post.date}`;
-      
+            
+      postElement.appendChild(userNameElement);
       postElement.appendChild(titleElement);
       postElement.appendChild(contentElement);
       postElement.appendChild(dateElement);

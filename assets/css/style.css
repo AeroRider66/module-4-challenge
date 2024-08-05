@@ -50,11 +50,12 @@ body {
     margin-bottom: 20px;
   }
 
-  #section-label-textarea {
+  /* #section-label-textarea {
     
   }  
+   */
   
-  .post-title {
+   .post-title {
     font-size: 20px;
     margin-top: 0;
   }
