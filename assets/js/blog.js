@@ -6,13 +6,13 @@ const blogPosts = [
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      author: "Lazarus Long",
+      name: "Lazarus Long",
       title: "Time Enough for Love",
       content: "Praesent auctor, mauris non blandit fringilla, augue purus cursus nulla, a tincidunt eros est nec turpis."
     },
     {
       name: "Paul Atredies",
-      title: "The Spice is control",
+      title: "The Spice is Control",
       content: "Fusce eget nibh id metus tincidunt semper eu sit amet est."
     }
   ];
@@ -31,7 +31,7 @@ const blogPosts = [
       const contentElement = document.createElement('p');
       // const dateElement = document.createElement('p');
       
-      authorElement.classList.add('post-userNname');
+      userNameElement.classList.add('post-userNname');
       titleElement.classList.add('post-title');
       contentElement.classList.add('post-content');
       
